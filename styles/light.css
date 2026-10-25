@@ -1,16 +1,69 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+/* Светлая цветовая схема и автоматический выбор по системным настройкам. */
+:root.theme-light,
+:root:not(.theme-dark):not(.theme-light) {
+  color-scheme: light;
+  --background-color: #fff1f7;
+  --text-color: #353430;
+  --accent-color: #ff8dcb;
+  --accent-color-soft: #ffc2e6;
+  --title-color: #ff8dcb;
+  --heading-color: #353430;
+  --button-color: #353430;
+  --outline-color: #353430;
+  --cover-image: url("../images/cover-image-light.png");
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .page,
+:root:not(.theme-dark):not(.theme-light) .page {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  background-image: var(--cover-image);
+}
+
+.theme-light .rec-decor,
+:root:not(.theme-dark):not(.theme-light) .rec-decor {
+  display: none;
+}
+
+.theme-light .page-title.shadow-decor,
+:root:not(.theme-dark):not(.theme-light) .page-title.shadow-decor {
+  text-shadow: 4px 4px 0 var(--accent-color-soft);
+}
+
+.theme-light .link,
+:root:not(.theme-dark):not(.theme-light) .link {
+  text-shadow: 2px 2px 0 var(--accent-color-soft);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.theme-dark):not(.theme-light) {
+    color-scheme: dark;
+    --background-color: #000028;
+    --text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --accent-color-soft: #ff0070;
+    --title-color: #ff0070;
+    --heading-color: #db00ff;
+    --button-color: #ff0070;
+    --outline-color: #ff0070;
+    --cover-image: url("../images/cover-image-dark.png");
+  }
+
+  :root:not(.theme-dark):not(.theme-light) .page {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    background-image: var(--cover-image);
+  }
+
+  :root:not(.theme-dark):not(.theme-light) .rec-decor {
+    display: block;
+  }
+
+  :root:not(.theme-dark):not(.theme-light) .page-title.shadow-decor {
+    text-shadow: 4px 4px 0 var(--accent-color);
+  }
+
+  :root:not(.theme-dark):not(.theme-light) .link {
+    text-shadow: 2px 2px 0 var(--accent-color);
+  }
 }

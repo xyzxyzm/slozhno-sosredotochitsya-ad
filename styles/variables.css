@@ -1,4 +1,17 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+/* Цвета и размеры основной, тёмной темы */
+:root {
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --accent-color-soft: #ff0070;
+  --title-color: #ff0070;
+  --heading-color: #db00ff;
+  --button-color: #ff0070;
+  --outline-color: #ff0070;
+  --cover-image: url("../images/cover-image-dark.png");
+  --main-font: "IBM Plex mono", monospace;
+  --font-size: 18px;
+  --line-height: 1.3;
+  --content-padding: 10px;
+  --section-gap: 50px;
+}
