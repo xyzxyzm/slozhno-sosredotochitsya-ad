@@ -17,7 +17,6 @@
 .cover {
   min-block-size: 668px;
   block-size: 100vh;
-  block-size: 100svh;
   padding: var(--content-padding);
 }
 
@@ -345,6 +344,10 @@
 
   .section-what__articles-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .section-what {
+    grid-template-columns: 1fr;
   }
 
   .gallery-list {
