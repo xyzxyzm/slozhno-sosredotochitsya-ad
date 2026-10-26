@@ -7,7 +7,7 @@
   --accent-color: #ff8dcb;
   --accent-color-soft: #ffc2e6;
   --title-color: #ff8dcb;
-  --heading-color: #353430;
+  --heading-color: #ffc2e6;
   --button-color: #353430;
   --outline-color: #353430;
   --cover-image: url("../images/cover-image-light.png");
@@ -27,7 +27,7 @@
 
 .theme-light .page-title.shadow-decor,
 :root:not(.theme-dark):not(.theme-light) .page-title.shadow-decor {
-  text-shadow: 4px 4px 0 var(--accent-color-soft);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .theme-light .link,
