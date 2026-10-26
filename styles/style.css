@@ -355,3 +355,18 @@
     grid-column: span 2;
   }
 }
+
+
+/* Исправления по результатам проверки макета. */
+.header__title {
+  align-self: center;
+}
+
+.section-how__content {
+  display: grid;
+  gap: 20px;
+}
+
+.footer {
+  background-color: var(--background-color);
+}
