@@ -20,6 +20,13 @@
   background-image: var(--cover-image);
 }
 
+.theme-light .header__title,
+:root:not(.theme-dark):not(.theme-light) .header__title,
+.theme-light .title-decor,
+:root:not(.theme-dark):not(.theme-light) .title-decor {
+  color: var(--text-color);
+}
+
 .theme-light .rec-decor,
 :root:not(.theme-dark):not(.theme-light) .rec-decor {
   display: none;
