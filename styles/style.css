@@ -295,10 +295,6 @@
     grid-row: 1;
   }
 
-  .section-what {
-    grid-template-columns: 1fr;
-  }
-
   .section-what__articles-list {
     grid-template-columns: minmax(0, 1fr);
     align-items: start;
@@ -313,7 +309,7 @@
   }
 
   .gallery-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-auto-rows: minmax(180px, auto);
     gap: 20px;
   }
