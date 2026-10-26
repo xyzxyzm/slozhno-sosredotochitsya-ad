@@ -295,6 +295,10 @@
     grid-row: 1;
   }
 
+  .section-what {
+    grid-template-columns: 1fr;
+  }
+
   .section-what__articles-list {
     grid-template-columns: minmax(0, 1fr);
     align-items: start;
