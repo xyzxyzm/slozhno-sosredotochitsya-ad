@@ -362,3 +362,19 @@
     grid-column: span 2;
   }
 }
+
+
+.main,
+.footer {
+  background-color: var(--background-color);
+}
+
+@media (width >= 1024px) {
+  .section-what {
+    grid-template-columns: minmax(236px, 1fr) 2fr;
+  }
+
+  .section-what__articles-list {
+    grid-column: 2;
+  }
+}
