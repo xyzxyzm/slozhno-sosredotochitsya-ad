@@ -137,7 +137,7 @@
 
 .header__title {
   grid-row: 3;
-  align-self: end;
+  align-self: center;
   padding: 0;
   background-color: var(--title-color);
   color: var(--background-color);
@@ -184,6 +184,11 @@
   font-weight: 400;
 }
 
+.section-how__content {
+  display: grid;
+  gap: 20px;
+}
+
 .link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -223,6 +228,7 @@
 .footer {
   display: grid;
   place-items: center;
+  background-color: var(--background-color);
 }
 
 .footer .page-title {
@@ -296,8 +302,6 @@
   }
 
   .section-how__content {
-    display: grid;
-    gap: 20px;
     grid-column: 2;
   }
 
@@ -354,19 +358,4 @@
   .gallery-list__item_street {
     grid-column: span 2;
   }
-}
-
-
-/* Исправления по результатам проверки макета. */
-.header__title {
-  align-self: center;
-}
-
-.section-how__content {
-  display: grid;
-  gap: 20px;
-}
-
-.footer {
-  background-color: var(--background-color);
 }
